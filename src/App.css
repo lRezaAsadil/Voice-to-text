@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "base";
+  src: url("./assets/IRANSans.ttf")
+}
+
+.container {
+  background-color: #191B24;
+  width: 50%;
+  margin: 200px auto;
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.text {
+  width: 100%;
+  font-family: base;
+  border-radius: 10px;
+  background: #393F56;
+  min-height: 100px;
+  padding: 20px;
+  color: #fff;
+}
+
+.buttons {
+  font-family: base;
+  margin-top: 20px;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.buttons button, select {
+  font-family: base;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+.buttons button:focus{
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+}
+
+.buttons select option {
+  font-family: base;
+  border-bottom: 1px dashed #ccc;
+  padding: 10px;
+}
