@@ -9,10 +9,7 @@ function App() {
   const copyText = () => {
     navigator.clipboard.writeText(textArea);
   };
-    speechToText.onend = () => {
-    console.info("voice recognition ended, restarting...");
-    speechToText.start();
-  };
+
   speechToText.continuous = true;
   speechToText.interimResults = true;
   speechToText.lang = lang;
